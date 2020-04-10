@@ -18,6 +18,7 @@
     <None Remove="images\houssem.png" />
     <None Remove="images\kallel.png" />
     <None Remove="images\lajmi.png" />
+    <None Remove="images\noimage.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +29,7 @@
     <EmbeddedResource Include="images\houssem.png" />
     <EmbeddedResource Include="images\kallel.png" />
     <EmbeddedResource Include="images\lajmi.png" />
+    <EmbeddedResource Include="images\noimage.png" />
   </ItemGroup>
 
   <ItemGroup>

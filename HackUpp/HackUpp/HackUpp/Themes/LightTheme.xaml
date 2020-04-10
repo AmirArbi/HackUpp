@@ -38,6 +38,14 @@
         </OnPlatform.Platforms>
     </OnPlatform>
 
+    <OnPlatform x:Key="Seggio" x:TypeArguments="x:String">
+        <OnPlatform.Platforms>
+            <On Platform="Android" Value="segmdl2.ttf#segmdl2" />
+            <On Platform="iOS" Value="segmdl2" />
+            <On Platform="UWP" Value="Assets/segmdl2.ttf#segmdl2" />
+        </OnPlatform.Platforms>
+    </OnPlatform>
+
     <OnPlatform x:Key="Montserrat-SemiBold" x:TypeArguments="x:String">
         <OnPlatform.Platforms>
             <On Platform="Android" Value="Montserrat-SemiBold.ttf#Montserrat-SemiBold" />

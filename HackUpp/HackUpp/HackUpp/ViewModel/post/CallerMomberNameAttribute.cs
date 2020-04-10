@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace instagram.ViewModel
+namespace HackUpp.ViewModel
 {
     internal class CallerMomberNameAttribute : Attribute
     {

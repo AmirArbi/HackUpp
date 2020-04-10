@@ -5,16 +5,39 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              NavigationPage.HasNavigationBar="False"
+             xmlns:local1="clr-namespace:HackUpp.serveces"
              x:Class="HackUpp.Home">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local1:MainViewAdress x:Key="ViewModel"></local1:MainViewAdress>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Black" >
-            <BoxView HeightRequest="0.1" Color="#303030"></BoxView>
-            <CollectionView ItemsSource="{Binding AdressList}">
+        <StackLayout BackgroundColor="White">
+            <CollectionView BindingContext="{StaticResource ViewModel}" ItemsSource="{Binding AdressList}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Orientation="Horizontal">
-                            <ImageButton Source="{Binding ImageSourc}" Aspect="AspectFit" CornerRadius="30" BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center"></ImageButton>
-                            <Label Text="{Binding Title}" TextColor="White" FontSize="Small" Padding="1,10,0,0"></Label>
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Frame CornerRadius="50" HeightRequest="50" WidthRequest="50" Margin="10" Padding="0">
+                                    <Image Source="{Binding PhotoProfil}" Aspect="AspectFit" BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center" ></Image>
+
+                                </Frame>
+                                <StackLayout>
+                                    <Label Text="{Binding UserName}" TextColor="Black" FontSize="Small" Padding="0,10,5,0" Margin="0"></Label>
+                                    <Label Text="{Binding Date}" TextColor="LightGray" FontSize="Small" Padding="0,0,0,10" Margin="0"></Label>
+                                </StackLayout>
+                                <StackLayout HorizontalOptions="Fill"  WidthRequest="180" Orientation="Horizontal">
+                                    <Label Text="{Binding sid9}"  VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="Medium"></Label>
+                                    <Label FontFamily="{StaticResource Key=Seggio}" Text="&#xE735;" VerticalOptions="Center" HorizontalOptions="End"  FontSize="Medium" TextColor="Orange"  Margin="0,0,0,0"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                            <Label Text="{Binding Title}" HorizontalOptions="Center"  FontSize="Title" HorizontalTextAlignment="Center" Margin="10,0,10,0" TextColor="Black"></Label>
+                            <Image Source="{Binding ImageSourc}" HeightRequest="200"></Image>
+                            <Label Text="{Binding Subtitle}"  FontSize="Subtitle"  Margin="10,0,10,0" TextColor="Black"></Label>
+                            <Label Text="Sources:" Margin="4,0,0,0"></Label>
+                            <Label Text="{Binding Description}" Margin="15,0,0,0"></Label>
+                            <BoxView BackgroundColor="Gray" HeightRequest="1" Margin="0,5,0,5"></BoxView>
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

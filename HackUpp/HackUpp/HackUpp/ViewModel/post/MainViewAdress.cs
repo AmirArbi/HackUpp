@@ -1,10 +1,10 @@
 ﻿using HackUpp.ViewModel;
-using instagram.ViewModel;
+using HackUpp.serveces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace instagram.serveces
+namespace HackUpp.serveces
 {
     class MainViewAdress : ViewModelBase
     {
