@@ -2,37 +2,30 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:hackupp="clr-namespace:HackUpp"
+            mc:Ignorable="d"
              x:Class="HackUpp.MainView">
   <!--Pages can be added as references or inline-->
-    <NavigationPage.TitleView>
-        <RelativeLayout >
-            <Label x:Name="UserPoints" WidthRequest="154" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="26" BackgroundColor="#8E44AD" Text="980 points" TextColor="White" />
-            <Frame RelativeLayout.XConstraint="{ConstraintExpression ElementName=UserPoints,Type=RelativeToView,Property=AnchorX,Constant=140}" WidthRequest="24" Padding="1,1,1,1" HeightRequest="24" BackgroundColor="#8E44AD" CornerRadius="13" >
-                <Image Source="coin1.png" HeightRequest="22" WidthRequest="22" Aspect="AspectFill"/>
-            </Frame>
-        </RelativeLayout>
-    </NavigationPage.TitleView>
     
-    <NavigationPage Title="home" IconImageSource="home.png">
+    
+    <NavigationPage Title="Home" IconImageSource="home.png">
         <x:Arguments>
 
         </x:Arguments>
     </NavigationPage>
     
-    <NavigationPage Title="search" IconImageSource="search.png">
+    <NavigationPage Title="Search" IconImageSource="search.png">
         <x:Arguments>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="plus" IconImageSource="plus.png">
+    <NavigationPage Title="Add post" IconImageSource="plus.png">
         <x:Arguments>
             
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Daily Gift" IconImageSource="graph.png">
+    <NavigationPage Title="Leaderboard" IconImageSource="graph.png">
         <x:Arguments>
             
         </x:Arguments>
@@ -40,7 +33,7 @@
 
     <NavigationPage Title="Profile" IconImageSource="user.png">
         <x:Arguments>
-            
+            <hackupp:ProfilePage/>
         </x:Arguments>
     </NavigationPage>
 </TabbedPage>
