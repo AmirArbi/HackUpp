@@ -11,6 +11,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\azaz.png" />
+    <None Remove="images\coronavirus.jpg" />
+    <None Remove="images\fekiyoussef.png" />
+    <None Remove="images\fikar.jpg" />
+    <None Remove="images\houssem.png" />
+    <None Remove="images\kallel.png" />
+    <None Remove="images\lajmi.png" />
+    <None Remove="images\noimage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="images\azaz.png" />
+    <EmbeddedResource Include="images\coronavirus.jpg" />
+    <EmbeddedResource Include="images\fekiyoussef.png" />
+    <EmbeddedResource Include="images\fikar.jpg" />
+    <EmbeddedResource Include="images\houssem.png" />
+    <EmbeddedResource Include="images\kallel.png" />
+    <EmbeddedResource Include="images\lajmi.png" />
+    <EmbeddedResource Include="images\noimage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.1.0.43" />
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.1.0.43" />
     <PackageReference Include="Syncfusion.Xamarin.SfTabView" Version="18.1.0.43" />
@@ -19,11 +41,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="MainView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ProfilePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    <EmbeddedResource Update="Page1.xaml">
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Themes\LightTheme.xaml">
       <Generator>MSBuild:Compile</Generator>
