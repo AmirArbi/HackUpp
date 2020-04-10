@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HackUpp.Views.Forms;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace HackUpp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MainView();
         }
 
         protected override void OnStart()

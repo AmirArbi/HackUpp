@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackUpp.Android", "HackUpp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackUpp.iOS", "HackUpp\HackUpp.iOS\HackUpp.iOS.csproj", "{FD8E88DC-D3C2-49A8-AD02-75159F432D8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackUpp", "HackUpp\HackUpp\HackUpp.csproj", "{8F35E634-674C-4907-906B-62E9C4739F1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackUpp", "HackUpp\HackUpp\HackUpp.csproj", "{8F35E634-674C-4907-906B-62E9C4739F1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
