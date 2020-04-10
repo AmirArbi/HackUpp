@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="HackUpp.Home">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black" >
+            <BoxView HeightRequest="0.1" Color="#303030"></BoxView>
+            <CollectionView ItemsSource="{Binding AdressList}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal">
+                            <ImageButton Source="{Binding ImageSourc}" Aspect="AspectFit" CornerRadius="30" BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center"></ImageButton>
+                            <Label Text="{Binding Title}" TextColor="White" FontSize="Small" Padding="1,10,0,0"></Label>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
