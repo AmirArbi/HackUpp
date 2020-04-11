@@ -1,10 +1,4 @@
-﻿using HackUpp.serveces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -32,6 +26,7 @@ namespace HackUpp
                 (sender as Xamarin.Forms.Button).TextColor = Color.Black;
                 green = false;
             }
+            
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
