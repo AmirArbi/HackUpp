@@ -20,7 +20,7 @@ namespace HackUpp
             .WithRedirectUri($"msal{Constants.ClientId}://auth")
             .Build();
 
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new MainView());
         }
 
         protected override void OnStart()

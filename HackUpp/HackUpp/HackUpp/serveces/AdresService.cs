@@ -22,7 +22,8 @@ namespace HackUpp.serveces
                 Title = "COVID-19",
                 UserName = "AmirElarbi",
                 sid9 = "9",
-                Description = "https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019" +
+                vote = 500,
+                Description = "https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019 \n" +
                 "https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public",
                 Subtitle = "Le premier infecterpar un nouveautype de coronavirus qui apparut de nouveau dans le monde. Un grand risque d'aprés l'Organisation mondiale de santé" 
         },

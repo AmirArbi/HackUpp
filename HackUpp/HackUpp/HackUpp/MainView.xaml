@@ -4,20 +4,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:hackupp="clr-namespace:HackUpp"
             mc:Ignorable="d"
+            NavigationPage.HasNavigationBar="False"
              x:Class="HackUpp.MainView">
   <!--Pages can be added as references or inline-->
     
     
-    <NavigationPage Title="Home" IconImageSource="home.png">
-        <x:Arguments>
-
-        </x:Arguments>
-    </NavigationPage>
-    
-    <NavigationPage Title="Search" IconImageSource="search.png">
-
     <hackupp:Home Title="home" IconImageSource="home.png"></hackupp:Home>
-    </NavigationPage>
 
     <NavigationPage Title="search" IconImageSource="search.png">
         <x:Arguments>

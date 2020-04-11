@@ -49,7 +49,7 @@ namespace HackUpp
                     .WithParentActivityOrWindow(App.UIParent)
                     .ExecuteAsync();
                 lab.Text = "touhemi bou fahja zaghret ay";
-                await Navigation.PushAsync(new LoginPage(result));
+                //await Navigation.PushAsync(new LoginPage(result));
             }
             catch (MsalException ex)
             {

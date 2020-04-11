@@ -12,6 +12,7 @@ namespace HackUpp.ViewModel
         public ImageSource ImageSourc { get; set; }
         public string Title { get; set; }
         public string sid9 { get; set; }
+        public int vote { get; set; }
         public ImageSource PhotoProfil { get; set; }
         public string UserName { get; set; }
         public string Description { get; set; }

@@ -21,7 +21,6 @@
                             <StackLayout Orientation="Horizontal">
                                 <Frame CornerRadius="50" HeightRequest="50" WidthRequest="50" Margin="10" Padding="0">
                                     <Image Source="{Binding PhotoProfil}" Aspect="AspectFit" BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center" ></Image>
-
                                 </Frame>
                                 <StackLayout>
                                     <Label Text="{Binding UserName}" TextColor="Black" FontSize="Small" Padding="0,10,5,0" Margin="0"></Label>
@@ -37,6 +36,11 @@
                             <Label Text="{Binding Subtitle}"  FontSize="Subtitle"  Margin="10,0,10,0" TextColor="Black"></Label>
                             <Label Text="Sources:" Margin="4,0,0,0"></Label>
                             <Label Text="{Binding Description}" Margin="15,0,0,0"></Label>
+                            <StackLayout Orientation="Horizontal">
+                                <Button FontFamily="{StaticResource Key=Seggio}"  Text="&#xEDDB;" VerticalOptions="Center" Clicked="Button_Clicked" FontSize="20" WidthRequest="50" BackgroundColor="Transparent"></Button>
+                                <Label Text="{Binding vote}" FontSize="20" VerticalOptions="Center" Margin="0"></Label>
+                                <Button FontFamily="{StaticResource Key=Seggio}" Clicked="Button_Clicked_1" Text="&#xEDDC;" VerticalOptions="Center" WidthRequest="50" FontSize="20" BackgroundColor="Transparent"></Button>
+                            </StackLayout>
                             <BoxView BackgroundColor="Gray" HeightRequest="1" Margin="0,5,0,5"></BoxView>
                         </StackLayout>
                     </DataTemplate>
