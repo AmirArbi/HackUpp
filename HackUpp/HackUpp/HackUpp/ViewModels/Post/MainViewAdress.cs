@@ -1,12 +1,10 @@
-﻿using HackUpp.ViewModel;
-using HackUpp.serveces;
-using System;
+﻿using HackUpp.Models;
+using HackUpp.Services;
 using System.Collections.Generic;
-using System.Text;
 
-namespace HackUpp.serveces
+namespace HackUpp.ViewModels.Post
 {
-    class MainViewAdress : ViewModelBase
+    class MainViewAdress : BaseViewModel
     {
         public MainViewAdress() {
             var adress = new AdresService();
@@ -19,7 +17,7 @@ namespace HackUpp.serveces
         public List<postVM> AdressList
         {
             get { return adressList; }
-            set { SetProperty(ref adressList, value); }
+            set { adressList = value; this.NotifyPropertyChanged(); }
         }
 
     }

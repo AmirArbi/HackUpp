@@ -5,11 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              NavigationPage.HasNavigationBar="False"
-             xmlns:local1="clr-namespace:HackUpp.serveces"
+             xmlns:local="clr-namespace:HackUpp.ViewModels.Post"
              x:Class="HackUpp.Home">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <local1:MainViewAdress x:Key="ViewModel"></local1:MainViewAdress>
+            <local:MainViewAdress x:Key="ViewModel"/>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -19,26 +19,26 @@
                     <DataTemplate>
                         <StackLayout>
                             <StackLayout Orientation="Horizontal">
-                                <Frame CornerRadius="50" HeightRequest="50" WidthRequest="50" Margin="10" Padding="0">
-                                    <Image Source="{Binding PhotoProfil}" Aspect="AspectFit" BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center" ></Image>
+                                <Frame CornerRadius="25" HeightRequest="50" WidthRequest="50" Margin="10" Padding="0">
+                                    <Image Source="{Binding Publisher.PhotoProfil}" Aspect="AspectFit" BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center" ></Image>
                                 </Frame>
                                 <StackLayout>
-                                    <Label Text="{Binding UserName}" TextColor="Black" FontSize="Small" Padding="0,10,5,0" Margin="0"></Label>
-                                    <Label Text="{Binding Date}" TextColor="LightGray" FontSize="Small" Padding="0,0,0,10" Margin="0"></Label>
+                                    <Label Text="{Binding Publisher.Username}" TextColor="Black" FontSize="Small" Padding="0,10,5,0" Margin="0"></Label>
+                                    <Label Text="{Binding Date, StringFormat='{0:D}'}" TextColor="LightGray" FontSize="Small" Padding="0,0,0,10" Margin="0"></Label>
                                 </StackLayout>
                                 <StackLayout HorizontalOptions="Fill"  WidthRequest="180" Orientation="Horizontal">
-                                    <Label Text="{Binding sid9}"  VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="Medium"></Label>
+                                    <Label Text="{Binding Publisher.Sid9}"  VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="Medium"></Label>
                                     <Label FontFamily="{StaticResource Key=Seggio}" Text="&#xE735;" VerticalOptions="Center" HorizontalOptions="End"  FontSize="Medium" TextColor="Orange"  Margin="0,0,0,0"></Label>
                                 </StackLayout>
                             </StackLayout>
                             <Label Text="{Binding Title}" HorizontalOptions="Center"  FontSize="Title" HorizontalTextAlignment="Center" Margin="10,0,10,0" TextColor="Black"></Label>
-                            <Image Source="{Binding ImageSourc}" HeightRequest="200"></Image>
+                            <Image Source="{Binding Photo}" HeightRequest="200"></Image>
                             <Label Text="{Binding Subtitle}"  FontSize="Subtitle"  Margin="10,0,10,0" TextColor="Black"></Label>
                             <Label Text="Sources:" Margin="4,0,0,0"></Label>
                             <Label Text="{Binding Description}" Margin="15,0,0,0"></Label>
                             <StackLayout Orientation="Horizontal">
                                 <Button FontFamily="{StaticResource Key=Seggio}"  Text="&#xEDDB;" VerticalOptions="Center" Clicked="Button_Clicked" FontSize="20" WidthRequest="50" BackgroundColor="Transparent"></Button>
-                                <Label Text="{Binding vote}" FontSize="20" VerticalOptions="Center" Margin="0"></Label>
+                                <Label Text="{Binding Vote}" FontSize="20" VerticalOptions="Center" Margin="0"></Label>
                                 <Button FontFamily="{StaticResource Key=Seggio}" Clicked="Button_Clicked_1" Text="&#xEDDC;" VerticalOptions="Center" WidthRequest="50" FontSize="20" BackgroundColor="Transparent"></Button>
                             </StackLayout>
                             <BoxView BackgroundColor="Gray" HeightRequest="1" Margin="0,5,0,5"></BoxView>
