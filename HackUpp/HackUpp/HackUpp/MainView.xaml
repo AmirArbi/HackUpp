@@ -17,6 +17,7 @@
     <NavigationPage Title="Search" IconImageSource="search.png">
 
     <hackupp:Home Title="home" IconImageSource="home.png"></hackupp:Home>
+    </NavigationPage>
 
     <NavigationPage Title="search" IconImageSource="search.png">
         <x:Arguments>
